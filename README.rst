@@ -76,7 +76,7 @@ Here are some examples *hint* replace xxxxxxxxxxx with real key::
       console.log(util.inspect(objs));
   });
 
-  var api = new embedly({key: EMBEDLY_KEY});
+  var api = new embedly({key: EMBEDLY_KEY, secure: true});
   var url = ('http://www.guardian.co.uk/media/2011/jan' +
              '/21/andy-coulson-phone-hacking-statement');
   api.preview({url: url}, function(err, objs) {
